@@ -1,8 +1,8 @@
-# AntoPY
+# AntoLib
 python package for using Anto
-https://pypi.python.org/pypi/antopy
+https://pypi.python.org/pypi/antolib
 
 
 ```zsh
-   $pip install antopy
+   $pip install antolib
 ```
