@@ -1,4 +1,4 @@
-import AntoCommon
+import antolib.AntoCommon
 import paho.mqtt.client as mqtt
 
 client = mqtt.Client()
@@ -11,7 +11,7 @@ class Anto():
         self.mqtt = Mqtt(user, key, thing)
         client.username_pw_set(self.user, self.key)
         client.connect('service.anto.io', 1883, 60)
-        print 'Created anto object!'
+        print('Created anto object!')
 
     def getVersion(self):
         return AntoCommon.ANTO_VER
@@ -21,7 +21,7 @@ class Anto():
         client.subscribe('channel/%s/%s/%s' % (self.user, self.thing, channel))
 
     def pub(self, channel, msg):
-        print ('Publish \'' + msg + '\' to: ' +channel)
+        print('Publish \'' + str(msg) + '\' to: ' + str(channel))
         client.publish('channel/%s/%s/%s' % (self.user, self.thing, channel), msg)
 
     def loop(self, loopFunction):

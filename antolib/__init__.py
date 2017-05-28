@@ -1,1 +1,1 @@
-from anto import *
+from antolib.anto import *
