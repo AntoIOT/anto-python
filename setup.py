@@ -9,7 +9,7 @@ setup(
     description = 'Python Library for using anto.',
     author = 'AntoIO',
     author_email = 'isaradream@gmail.com',
-    keywords = ['anto'],
+    keywords = ['anto', 'iot', 'platform', 'mqtt'],
     classifiers = [
       'Topic :: Education',
       'Topic :: Utilities'
